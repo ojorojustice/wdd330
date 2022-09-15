@@ -1,0 +1,26 @@
+body{
+    background-color:bisque;
+}
+
+h1{
+    align-self: center;
+    margin: auto;
+
+}
+
+.mainContainer{
+    background-color:rgb(254, 207, 149);
+    margin: auto;
+    width: 80%;
+    height:100vh;
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
