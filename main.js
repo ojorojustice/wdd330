@@ -4,56 +4,56 @@
 /*My objects I will be using these to keep my notes*/
 
 const frontendDirectory = [{
-    title : "Making Computer Remember Me",
+    title : "Programming Basics: Making Computer Remember Me (localStorage)",
 },
 {
-    title : "Programming Basics",
+    title : "",
 }
 ,
 {
-    title : "Arrays, Logic and Loops",
+    title : "",
 },
 {
-    title : "functions",
+    title : "",
 }
 ,
 {
-    title : "Objects",     
+    title : "",     
 },
 {
-    title : "Document Object Model",   
+    title : "",   
 },
 {
 
-    title : "Events",  
+    title : "",  
 }
 ,
 {
     
-    title : "Forms", 
+    title : "", 
 },
 {
-    title : "Object Oriented Programming",
+    title : "",
 }
 ,
 {
-    title : "Testing and Debugging",
+    title : "",
 },
 {
-    title : "Ajax & Canvas",
+    title : "",
 
 },
 {
 
-    title : "Transforms and Transitions",
+    title : "",
 }
 ,
 {
-    title : "The Window Object",  
+    title : "",  
 },
 {
     
-    title : "HTML5 APIS",
+    title : "",
          
 }];
 
