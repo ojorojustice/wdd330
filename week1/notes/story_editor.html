@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Story Editor</title>
+    
+        <a href="../../" style="color:rgb(239, 167, 23)"
+          ><b><em color="blue !important">exit</em></b></a
+        >
     <link
       rel="stylesheet"
       type="text/css"
@@ -34,28 +38,40 @@
         height: 250px;
         background-color: lightyellow;
       }
+
+      #innerContainer {
+        width: 80%;
+        margin: Auto;
+        padding-top: 100px;
+      }
     </style>
   </head>
 
   <body>
     <div class="mainContainer">
-      <h1>Hello</h1>
-      <label for="name_input">Story Name</label>
-      <input id="name_input" class="name_input" name="name_input" />
-      <section>
-        <button onclick="loadStory()">Find and Edit It</button>
-        <button onclick="saveStory()">Save It</button>
-        <button onclick="displayStory()">Display It</button>
-      </section>
+      <div id="innerContainer">
+        <h1>Hello</h1>
+        <p>
+          <a href="../../" style="color:rgb(239, 167, 23)"
+            ><b><em color="blue !important">exit</em></b></a
+          ></p>
+        <label for="name_input">Story Name</label>
+        <input id="name_input" class="name_input" name="name_input" />
+        <section>
+          <button onclick="loadStory()">Find and Edit It</button>
+          <button onclick="saveStory()">Save It</button>
+          <button onclick="displayStory()">Display It</button>
+        </section>
 
-      <textarea
-        id="story_editor"
-        class="story_editor"
-        name="story_editor"
-        placeholder="Write an awesome story here"
-      ></textarea>
+        <textarea
+          id="story_editor"
+          class="story_editor"
+          name="story_editor"
+          placeholder="Write an awesome story here"
+        ></textarea>
 
-      <section id="story_display"></section>
+        <section id="story_display"></section>
+      </div>
     </div>
   </body>
 </html>
