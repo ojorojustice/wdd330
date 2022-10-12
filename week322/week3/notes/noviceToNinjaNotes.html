@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novice To Ninja Notes</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../styles.css"
+      media="screen"
+    />
+    <style>
+      h3 {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Week 3 Notes</h1>
+      <a href="../../" style="color: rgb(239, 167, 23)"
+        ><b><em color="blue !important">Home</em></b></a
+      >
+      <hr />
+      <br />
+      <h3>Regular Expressions</h3>
+      <p>
+        >There are two ways to create a regular expression. The first, and
+        preferred way, is to use the literal notation of writing the regular
+        expression between forward slashes: <br /><br />
+
+        const pattern = /[a-zA-Z]+ing$/;<br />
+
+        Alternatively, you can create a new instance of the RegExp object using
+        the new operator and a constructor function:<br /><br />
+
+        const pattern = new RegExp('[a-zA-Z]+ing');<br />
+
+        Using literal regular expressions takes less typing, but there are
+        advantages to using the constructor function as it lets you create
+        regular expressions using strings, which can be useful when the regular
+        expression is provided from user input; in a form, for example.
+        Constructors also have the advantage of letting us create a regular
+        expression using a variable:<br /><br />
+
+        const language = 'JavaScript';<br />
+        const pattern = new RegExp(language);
+      </p>
+      <h3>Query Selector</h3>
+
+      <p>
+        The document.querySelector() method allows you to use CSS notation to
+        find the first element in the document that matches that matches a CSS
+        selector provided as an argument. If no elements match, it will return
+        null. <br />
+
+        The document.querySelectorAll() method also uses CSS notation but
+        returns a node list of all the elements in the document that match the
+        CSS query selector. If no elements match, it will return an empty node
+        list.<br />
+
+        These are both very powerful methods that can emulate all the methods
+        discussed, as well as allowing more fine-grained control over which
+        element nodes are returned.
+      </p>
+      <br />
+      <h3>
+        Keyboard Events (culled directly from the novice to ninja textbook)
+      </h3>
+      <p>
+        Three events that occur when a user presses a key are: keydown, keypress
+        and keyup. When a user presses a key, the events occur in that order.
+        They are not tied to any particular key, although the information about
+        which key was pressed is a property of the event object. <br /><br />The
+        keydown event occurs when a key is pressed and will continue to occur if
+        the key is held down. <br /><br />The keypress event occurs after a
+        keydown event but before a keyup event. The keypress event only occurs
+        for keys that produce character input (plus the 'Delete' key). This
+        means that it’s the most reliable way to find out the character that was
+        pressed on the keyboard. <br /><br />The keyup event occurs when a key
+        is released. To understand the differences in these events, it is
+        important to distinguish between a physical key on the keyboard and a
+        character that appears on the screen. The keydown event is the action of
+        pressing a key, whereas the keypress event is the action of a character
+        being typed on the screen.
+      </p>
+    </div>
+  </body>
+</html>
