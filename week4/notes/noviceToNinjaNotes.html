@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novice To Ninja Notes</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../styles.css"
+      media="screen"
+    />
+    <style>
+      h3 {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Week 4 Notes</h1>
+      <a href="../../" style="color: rgb(239, 167, 23)"
+        ><b><em color="blue !important">Home</em></b></a
+      >
+      <hr />
+      <br />
+      <h3>Forms</h3>
+      <p>
+        The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. One can also use this method in defering or preventing forms default behaviour <br /><br />
+
+        document.getElementById("myAnchor").addEventListener("click", function(event){
+          event.preventDefault()
+        });<br>
+
+        
+      <h3>Constructor in Javascript</h3>
+
+      <p>
+        const Dice = function(sides=6){<br>
+          this.sides = sides;<br>
+          this.roll = function() {<br>
+              return Math.floor(this.sides * Math.random() + 1)<br>
+          }<br>
+      } <br />
+
+        Parentheses are not required when instantiating a javascript class unless an argument needs to be provided.<br />
+
+        
+      </p>
+      <br />
+      <h3>
+        Static Methods
+      </h3>
+      <p>
+        The static keyword can be used in class declarations to create a static method. These are sometimes called class methods in other programming languages. A static method is called by the class directly rather than by instances of the class.<br></p>
+
+        <h3>Prototypal Inheritance</h3>
+<p>JavaScript uses a prototypal inheritance model. This means that every class has a prototype property that is shared by every instance of the class. So any properties or methods of a class’s prototype can be accessed by every object instantiated by that class.<br></p></p>
+<h3>Culled Summary from Text book Chapter</h3>
+<p>The summary will help me to search other materials online to support my learning. Object Oriented Programming is important to me.<br>
+
+-Inside a constructor function or class declaration, the keyword this refers to the object returned by the function.<br>
+
+-All instances of a class or constructor function inherit all the properties and methods of its prototype.<br>
+
+-The prototype is live, so new properties and methods can be added to existing instances.<br>
+
+-The prototype chain is used to find an available method. If an object lacks a method, JavaScript will check whether its prototype has the method. If not, it will check that function’s prototype until it finds the method or reaches the Object constructor function.<br>
+
+-Private properties and methods can be created by defining variables using const and defining a function inside a constructor function. These can be made public using getter and setter functions.<br>
+
+-Monkey-patching is the process of adding methods to built-in objects by augmenting their prototypes. This should be done with caution as it can cause unexpected behavior in the way built-in objects work.<br>
+
+-A mixin method can be used to add properties and methods from other objects without creating an inheritance chain.<br>
+
+-Methods can be chained together and called in sequence if they return a reference to this.<br>
+
+-Polymorphism allows objects to override shared methods with a more specific implementation.<br>
+
+-The value of this is not retained inside nested functions, which can cause errors. This can be worked around by using that = this, using the bind(this) method and using arrow functions.<br>
+
+-Methods can be borrowed from other objects.<br>
+
+-Composition over inheritance is a design pattern where objects are composed from 'building-block' objects, rather than inheriting all their properties and methods from a parent class.<br>
+</p>
+    </div>
+  </body>
+</html>

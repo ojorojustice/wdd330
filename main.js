@@ -1,4 +1,3 @@
-
 const quiz = [
   { name: "Superman", realName: "Clark Kent" },
   { name: "Wonder Woman", realName: "Diana Prince" },
@@ -11,7 +10,7 @@ const view = {
   question: document.getElementById("question"),
   result: document.getElementById("result"),
   info: document.getElementById("info"),
-  start: document.getElementById('start'),
+  start: document.getElementById("start"),
   render(target, content, attributes) {
     for (const key in attributes) {
       target.setAttribute(key, attributes[key]);
@@ -110,7 +109,7 @@ const frontendDirectory = [
     title: "Objects, DOM and Events",
   },
   {
-    title: "",
+    title: "Forms, OOP and Modern Javascript",
   },
   {
     title: "",
@@ -168,5 +167,3 @@ frontendDirectory.forEach((product, index) => {
 function quizNinja() {
   alert("Welcome to Quiz Ninja!");
 }
-
-
