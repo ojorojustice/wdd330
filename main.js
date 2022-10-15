@@ -112,7 +112,7 @@ const frontendDirectory = [
     title: "Forms, OOP and Modern Javascript",
   },
   {
-    title: "",
+    title: "Testing and Debugging",
   },
   {
     title: "",

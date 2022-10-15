@@ -103,7 +103,7 @@ button {
   background-color: #c00;
 }
 
-p{
+p,h3{
   width:85%;
   margin:auto;
 }
