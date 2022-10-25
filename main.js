@@ -115,7 +115,7 @@ const frontendDirectory = [
     title: "Testing and Debugging",
   },
   {
-    title: "",
+    title: "My First Javascript Project - TodoList",
   },
   {
     title: "",
