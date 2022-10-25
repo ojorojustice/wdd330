@@ -1,5 +1,5 @@
-import { countNotCompleted,filterSpan} from "./utilities.js";
-import{todolistLocalStorage,toDoList} from "./ls.js"
+import { countNotCompleted, filterSpan } from "./utilities.js";
+import { todolistLocalStorage, toDoList } from "./ls.js";
 //selectors
 
 const todoButtons = document.querySelector(".todo-btn");
@@ -12,11 +12,6 @@ const filterField = document.querySelector(".filterField");
 const allButton = document.getElementById("all-buttons");
 const activeButton = document.getElementById("active-buttons");
 const completedButton = document.getElementById("completed-buttons");
-
-
-
-
-
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //eventListerners
@@ -111,6 +106,7 @@ function deleteChecked(e) {
     const itemParent = item.parentElement;
     removeTodoList(itemParent);
     itemParent.remove();
+    countNotCompleted();
   }
 
   if (item.classList[0] === "completed-button") {
@@ -123,20 +119,17 @@ function deleteChecked(e) {
         if (todo.content === item.parentElement.childNodes[1].innerText) {
           let indexInTodos = toDos.indexOf(todo);
           toDos[indexInTodos].completed = false;
-          console.log(toDos);
           localStorage.setItem("todos", JSON.stringify(toDos));
           console.log(JSON.parse(localStorage.getItem("todos")));
           countNotCompleted();
         }
       });
-    }else{
+    } else {
       let toDos = JSON.parse(localStorage.getItem("todos"));
       toDos.forEach(function (todo) {
-        console.log(todo.content);
         if (todo.content === item.parentElement.childNodes[1].innerText) {
           let indexInTodos = toDos.indexOf(todo);
           toDos[indexInTodos].completed = true;
-          console.log(toDos);
           localStorage.setItem("todos", JSON.stringify(toDos));
           console.log(JSON.parse(localStorage.getItem("todos")));
           countNotCompleted();
@@ -145,8 +138,6 @@ function deleteChecked(e) {
     }
   }
 }
-
-
 
 function getTodoList() {
   let todos;
@@ -199,7 +190,3 @@ function removeTodoList(todo) {
   todos.splice(todos.indexOf(indexOfTodo), 1);
   localStorage.setItem("todos", JSON.stringify(todos));
 }
-
-
-
-
