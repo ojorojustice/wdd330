@@ -1,0 +1,114 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(234, 146, 39);
+  color: aliceblue;
+  font-family: poppins, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5em;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+
+form button {
+  background: white;
+  color: blueviolet;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: blueviolet;
+  color: white;
+}
+
+.todo-repeater {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 435px;
+  list-style: none;
+}
+
+.todos {
+  display: flex;
+  color: black;
+  background-color: beige;
+  justify-content: space-between;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.todos li {
+  flex: 1;
+}
+
+.completed-button,
+.deleted-button {
+  color: white;
+  background-color: blueviolet;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.completed-button {
+  background-color: green;
+}
+
+.todoLi {
+  padding: 0rem o.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completeFilter{
+    text-decoration: line-through;
+}
+
+.filterField{
+  display:flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  width:435px;
+  margin:auto;
+  
+  align-items: center;
+}
+
+.filterField .filter-buttons{
+  flex:1;
+}
+
+.filter-span{
+  background-color: aqua;
+  color:black
+}
