@@ -48,8 +48,12 @@ function addTodo(event) {
 
   const newTodos = document.createElement("li");
   newTodos.classList.add("todoLi");
-  newTodos.innerText = todoInput.value;
-
+  if (todoInput.value.length < 2) {
+    alert("Plese enter today's task");
+    return false;
+  } else {
+    newTodos.innerText = todoInput.value;
+  }
   todolistLocalStorage(todoInput.value);
   //completedButtons
   const completedButtons = document.createElement("button");
@@ -97,7 +101,6 @@ function deleteChecked(e) {
     }
   }
 }
-
 
 function todolistLocalStorage(todo) {
   let toDos;
@@ -184,4 +187,4 @@ function countNotCompleted() {
   }
 }
 
-export{countNotCompleted,getTodoList};
+export { countNotCompleted, getTodoList };
