@@ -118,7 +118,7 @@ const frontendDirectory = [
     title: "My First Javascript Project - TodoList",
   },
   {
-    title: "",
+    title: "Further Functions ad Ajax",
   },
   {
     title: "",

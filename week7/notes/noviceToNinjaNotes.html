@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novice To Ninja Notes</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../styles.css"
+      media="screen"
+    />
+    <style>
+      h3 {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Week 7 Notes</h1>
+      <a href="../../" style="color: rgb(239, 167, 23)"
+        ><b><em color="blue !important">Home</em></b></a
+      >
+      <hr />
+      <br />
+      <h3>Points From Ajax</h3>
+      <p> Since Ajax is very important, It is important for me to memorise these steps.<br><br>
+      const url = 'https:example.com/data';<br>
+        const headers = new Headers({ 'Content-Type': 'text/plain', 'Accept-Charset' : 'utf-8', 'Accept-Encoding':'gzip,deflate' })<br>
+        
+        const request = (url,{<br>
+            headers: headers<br>
+        })<br>
+        
+        fetch(request)<br>
+        .then( function(response) {<br>
+            if(response.ok) {<br>
+                return response;<br>
+            }<br>
+            throw Error(response.statusText);<br>
+        })<br>
+        .then( response => // do something with response )<br>
+        .catch( error => console.log('There was an error!') )<br><br><br>
+
+        The following points needs to be remembered.
+      <ol>
+        <li>1. Ajax is a technique for sending and receiving data ususally asynchronously JSON-format data in the background.</li>
+          
+         <li> 2. Ajax is also used for communicating with external APIs.</li>
+          
+          <li>3. Ajax requests can be made using the Fetch API.</li>
+          
+      </ol></p><br><br>
+      <h3>Further Functions Summary</h3>
+      <p>
+        I have to revisit and revisit Functions if I have to be trusted with javascript, these are the chapter summary points I need to review more before the end of the year.
+<ol>
+  <li>1. Because fucntions re super objects, they have built-in properties such as length, but can have custom properties added.
+
+   <li>2. All functions have call() and apply() methods that can invoke a function with the value of this bound to an object that is provided as an argument.
+  </li> 
+  <li>3.  Immediately Invoked Function Expressions or IIFEs are functions that are enclosed in parentheses and immediately followed by double parentheses so they’re invoked. They are useful for namespacing variables and setting default values.</li> 
+    
+   <li>4. Promises can be used instead of callbacks to deal with multiple asynchronous actions in sequence. They also provide a nicer mechanism for handling errors.</li> 
+    
+    <li>5. A closure is the process of keeping a reference to a variable available outside the scope of the function it was originally defined in.
+    
+      A generator is created by placing an asterisk character (*) after the function keyword.
+      
+      A generator function will return an iterator object that provides a next() method, which returns the next value in a sequence that is defined in the generator function.
+    </li>
+    
+    <li>6. Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the same result when given the same arguments (referential transparency). </li>
+    
+   <li>7. Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.</li>
+</ol>
+      </p>
+    </div>
+  </body>
+</html>
