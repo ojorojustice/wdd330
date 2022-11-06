@@ -118,10 +118,10 @@ const frontendDirectory = [
     title: "My First Javascript Project - TodoList",
   },
   {
-    title: "Further Functions ad Ajax",
+    title: "Further Functions and Ajax",
   },
   {
-    title: "",
+    title: "Transforms, transitions, SVGs and Canvas",
   },
   {
     title: "",
