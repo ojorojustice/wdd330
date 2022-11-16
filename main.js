@@ -124,7 +124,7 @@ const frontendDirectory = [
     title: "Transforms, transitions, SVGs and Canvas",
   },
   {
-    title: "",
+    title: "Window Object and the HTML5 APIs",
   },
   {
     title: "",
