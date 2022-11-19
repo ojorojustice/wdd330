@@ -127,7 +127,7 @@ const frontendDirectory = [
     title: "Window Object and the HTML5 APIs",
   },
   {
-    title: "",
+    title: "Validating Forms and Using Fetch.",
   },
   {
     title: "",

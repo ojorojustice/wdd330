@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novice To Ninja Notes</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../styles.css"
+      media="screen"
+    />
+    <style>
+      h3 {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Week 10 Notes</h1>
+      <a href="../../" style="color: rgb(239, 167, 23)"
+        ><b><em color="blue !important">Home</em></b></a
+      >
+      <hr />
+      <br />
+      <h3>Form Validation</h3>
+      <br /><br />
+      <p>
+        The 3 reasons for form validation: 1.We want to get the right data, in
+        the right format. Our applications won't work properly if our users'
+        data is stored in the wrong format, is incorrect, or is omitted
+        altogether. 2. We want to protect our users' data. Forcing our users to
+        enter secure passwords makes it easier to protect their account
+        information. 3. We want to protect ourselves. There are many ways that
+        malicious users can misuse unprotected forms to damage the application.
+        See Website security.<br /><br />
+        To validate a form these 3 questions are important:<br /><br />
+
+        What kind of validation should I perform? You need to determine how to
+        validate your data: string operations, type conversion, regular
+        expressions, and so on. It's up to you.<br /><br />
+
+        What should I do if the form doesn't validate? This is clearly a UI
+        matter. You have to decide how the form will behave. Does the form send
+        the data anyway? Should you highlight the fields that are in error?
+        Should you display error messages?<br /><br />
+
+        How can I help the user to correct invalid data? In order to reduce the
+        user's frustration, it's very important to provide as much helpful
+        information as possible in order to guide them in correcting their
+        inputs. You should offer up-front suggestions so they know what's
+        expected, as well as clear error messages. <br /><br />
+        I must have this link
+        handy:https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation<br />
+      </p>
+
+      <h3>fetch() API</h3>
+      <br /><br />
+      <p>
+        The fetch specification differs from jQuery.ajax() in the following
+        significant ways:<br /><br />
+
+        The Promise returned from fetch() won't reject on HTTP error status even
+        if the response is an HTTP 404 or 500. Instead, as soon as the server
+        responds with headers, the Promise will resolve normally (with the ok
+        property of the response set to false if the response isn't in the range
+        200–299), and it will only reject on network failure or if anything
+        prevented the request from completing.<br /><br />
+        Unless fetch() is called with the credentials option set to include,
+        fetch():<br /><br />
+        won't send cookies in cross-origin requests<br /><br />
+        won't set any cookies sent back in cross-origin responses<br /><br />
+        As of August 2018, the default credentials policy changed to
+        same-origin. Firefox was also modified in version 61.0b13)<br /><br />
+        A basic fetch request is really simple to set up. Have a look at the
+        following code:<br /><br />
+
+        fetch('http://example.com/movies.json') .then((response) =>
+        response.json()) .then((data) => console.log(data));
+      </p>
+    </div>
+  </body>
+</html>
