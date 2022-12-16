@@ -1,4 +1,6 @@
-const navDirectory = [
+document.addEventListener("DOMContentLoaded", () => {
+  //Information for the navbar
+  const navDirectory = [
     {
       navTitle: "About Us",
       navUrl: "about-us.html",
@@ -39,3 +41,23 @@ const navDirectory = [
     navLink.classList.toggle("hide");
   });
   
+  //information for my main body container1
+  const policeStations = document.getElementById("police_stations");
+
+  fetch(
+    "https://cors-anywhere.herokuapp.com/https://police-api.onrender.com/policeAPI/get"
+  )
+    .then((res) => {
+      return res.json;
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+
+    //information for my main body container1
+    
+});
