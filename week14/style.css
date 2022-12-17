@@ -11,6 +11,8 @@
   display: block;
   margin-bottom: 40px;
   background-color: bisque;
+  box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -23,6 +25,8 @@ body {
 
 .container1,
 .container2 {
+  box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
   width: 50%;
   margin: auto;
   margin-top: 5px;
@@ -105,7 +109,7 @@ a {
 }
 
 .navlink a:hover {
-  background-color: lightcoral;
+  background-color: rgb(253, 217, 173);
 }
 
 .hide {

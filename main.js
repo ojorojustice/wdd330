@@ -130,16 +130,16 @@ const frontendDirectory = [
     title: "Validating Forms and Using Fetch.",
   },
   {
-    title: "",
+    title: "Practice",
   },
   {
-    title: "",
+    title: "Practice",
   },
   {
-    title: "",
+    title: "Practice",
   },
   {
-    title: "",
+    title: "Final Project",
   },
 ];
 
